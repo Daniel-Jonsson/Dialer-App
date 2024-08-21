@@ -1,0 +1,19 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+        <SwitchPreferenceCompat
+            app:key="store"
+            app:defaultValue="true"
+            app:title="@string/store_number_header"
+            app:summary="@string/store_number_summary"
+            app:icon="@android:drawable/ic_menu_save" />
+        <Preference
+            app:key="delete"
+            app:title="@string/delete_number_header"
+            app:summary="@string/delete_number_summary"
+            app:icon="@drawable/call_list_delete"
+            />
+        <ListPreference
+                app:key="downloaded_voices"
+                app:title="@string/voice"
+                app:icon="@drawable/speaking_voice"
+            app:defaultValue="@string/default_voice"/>
+</PreferenceScreen>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/dialpad_horizontal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <se.miun.dajo1903.dt031g.dialer.DialpadButton
+        android:id="@+id/dialTwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@id/dialpad_horizontal1"
+        app:layout_constraintEnd_toStartOf="@id/dialpad_vertical2"
+        app:layout_constraintStart_toEndOf="@id/dialpad_vertical1"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:message="ABC"
+        app:title="2" />
+
+    <se.miun.dajo1903.dt031g.dialer.DialpadButton
+        android:id="@+id/dialOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@id/dialpad_horizontal1"
+        app:layout_constraintEnd_toStartOf="@+id/dialpad_vertical1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:title="1" />
+
+    <se.miun.dajo1903.dt031g.dialer.DialpadButton
+        android:id="@+id/dialThree"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@id/dialpad_horizontal1"
+        app:layout_constraintEnd_toEndOf="@id/dialpad_vertical3"
+        app:layout_constraintStart_toEndOf="@id/dialpad_vertical2"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:message="DEF"
+        app:title="3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/dialpad_horizontal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75"  />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/dialpad_horizontal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1" />
+
+    <se.miun.dajo1903.dt031g.dialer.DialpadButton
+        android:id="@+id/dialFour"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@id/dialpad_horizontal2"
+        app:layout_constraintEnd_toStartOf="@id/dialpad_vertical1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialpad_horizontal1"
+        app:message="GHI"
+        app:title="4" />
+
+    <se.miun.dajo1903.dt031g.dialer.DialpadButton
+        android:id="@+id/dialFive"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@id/dialpad_horizontal2"
+        app:layout_constraintEnd_toStartOf="@id/dialpad_vertical2"
+        app:layout_constraintStart_toEndOf="@id/dialFour"
+        app:layout_constraintTop_toBottomOf="@id/dialpad_horizontal1"
+        app:message="JKL"
+        app:title="5" />
+
+    <se.miun.dajo1903.dt031g.dialer.DialpadButton
+        android:id="@+id/dialSix"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@id/dialpad_horizontal2"
+        app:layout_constraintEnd_toEndOf="@id/dialpad_vertical3"
+        app:layout_constraintStart_toEndOf="@id/dialFive"
+        app:layout_constraintTop_toBottomOf="@id/dialpad_horizontal1"
+        app:message="MNO"
+        app:title="6" />
+
+    <se.miun.dajo1903.dt031g.dialer.DialpadButton
+        android:id="@+id/dialSeven"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@id/dialpad_horizontal3"
+        app:layout_constraintEnd_toStartOf="@id/dialpad_vertical1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialpad_horizontal2"
+        app:message="PQRS"
+        app:title="7" />
+
+    <se.miun.dajo1903.dt031g.dialer.DialpadButton
+        android:id="@+id/dialEight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@id/dialpad_horizontal3"
+        app:layout_constraintEnd_toStartOf="@id/dialpad_vertical2"
+        app:layout_constraintStart_toEndOf="@id/dialSeven"
+        app:layout_constraintTop_toBottomOf="@id/dialpad_horizontal2"
+        app:message="TUV"
+        app:title="8" />
+
+    <se.miun.dajo1903.dt031g.dialer.DialpadButton
+        android:id="@+id/dialNine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@id/dialpad_horizontal3"
+        app:layout_constraintEnd_toEndOf="@id/dialpad_vertical3"
+        app:layout_constraintStart_toEndOf="@id/dialEight"
+        app:layout_constraintTop_toBottomOf="@id/dialpad_horizontal2"
+        app:message="WXYZ"
+        app:title="9" />
+
+    <se.miun.dajo1903.dt031g.dialer.DialpadButton
+        android:id="@+id/dialStar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@id/dialpad_horizontal1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dialpad_vertical3"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:title="\u002a" />
+
+    <se.miun.dajo1903.dt031g.dialer.DialpadButton
+        android:id="@+id/dialZero"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoSizeTextType="uniform"
+        app:title="0"
+        app:message="+"
+        app:layout_constraintStart_toEndOf="@id/dialSix"
+        app:layout_constraintBottom_toBottomOf="@id/dialpad_horizontal2"
+        app:layout_constraintTop_toBottomOf="@id/dialpad_horizontal1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <se.miun.dajo1903.dt031g.dialer.DialpadButton
+        android:id="@+id/dialPound"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@id/dialpad_horizontal3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dialNine"
+        app:layout_constraintTop_toBottomOf="@id/dialpad_horizontal2"
+        app:title="#" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/dialpad_vertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/dialpad_vertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/dialpad_vertical3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25"/>
+
+    <se.miun.dajo1903.dt031g.dialer.Dialarea
+        android:id="@+id/dialArea"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
